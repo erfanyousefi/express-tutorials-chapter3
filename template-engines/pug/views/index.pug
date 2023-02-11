@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        title Pug Template Engine
+    body 
+        include partials/_nav
+        div.container    
+            header.red 
+                h2 Pug Template Engine
+            section     
+                h2.blue #{section}
+                p.violet Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dolor.
+                table(border='1') 
+                    each user in users  
+                        tr 
+                            td #{user.id}
+                            td #{user.name}
+                
+                each num in [1,2,3,4,5,6]
+                    li=num
+                each value,key in {a:1, b:2}
+                    li #{key} : #{value}
+            include partials/_footer

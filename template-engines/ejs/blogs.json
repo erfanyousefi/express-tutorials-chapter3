@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Designe for Everyone",
+        "image": "assets/imgs/blog-1.jpg",
+        "author": "Erfan Yousefi",
+        "likes": 235,
+        "comments": 45,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi."
+    },
+    {
+        "id": 2,
+        "title": "Web Layouts",
+        "image": "assets/imgs/blog-2.jpg",
+        "author": "Amir Azimi",
+        "likes": 78,
+        "comments": 35,
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi."
+    },
+    {
+        "id": 3,
+        "title": "Bootstrap Framework",
+        "image": "assets/imgs/blog-3.jpg",
+        "author": "Omid Baharifar",
+        "likes": 24,
+        "comments": 7,
+        "text": "Lorem ipsum, consectetur adipisicing elit. Ut ad vel dolorum, iusto velit, minima? Voluptas nemo harum impedit nisi."
+    }
+]

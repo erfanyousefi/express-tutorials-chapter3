@@ -1,0 +1,27 @@
+<section id="blog" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">My Blogs</h6>
+            <h6 class="section-title mb-4">{{blogTitle}}</h6>
+            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
+
+            <div class="row text-left">
+                {{#each blogs}}
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src={{this.image}} alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{this.title}}</h5>
+                            <div class="post-details">
+                                <a href="javascript:void(0)">{{this.author}}</a>
+                                <a href="javascript:void(0)"><i class="ti-thumb-up"></i>{{this.likes}} </a>
+                                <a href="javascript:void(0)"><i class="ti-comment"></i> {{this.comments}}</a>
+                            </div>
+                            <p>{{this.text}}</p>
+                            <a href="javascript:void(0)">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
