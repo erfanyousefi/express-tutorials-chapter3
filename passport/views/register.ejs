@@ -1,0 +1,26 @@
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://botostart.ir/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c523c566.png&w=256&q=100" alt="" width="auto" height="150">
+    <h1 class="display-5 fw-bold">Register Here</h1>
+    <p class="display-6 fw-bold mt-3 text-danger">
+        <%= messages?.error?? ""%>
+    </p>
+    <div class="col-lg-3 mx-auto">
+        <form action="/register" method="POST">
+            <div class="mb-2">
+                <label for="fullname" class="form-label">fullName</label>
+                <input type="text" class="form-control" name="fullname" placeholder="fullName" required>
+            </div>
+            <div class="mb-2">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username" required>
+            </div>
+            <div class="mb-2">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Signup</button>
+            <a href="/login" class="btn btn-secondary mt-2">Signing</a>
+            <a href="/" class="btn btn-success mt-2">Home</a>
+        </form>
+    </div>
+</div>
